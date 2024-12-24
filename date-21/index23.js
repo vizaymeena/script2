@@ -31,5 +31,19 @@ let action=()=>{
       confirmpass.innerHTML="Password not matched";
       return false; 
     }
+    else if(!(email.includes("@")&& email.includes(".com"))){ /* '!' if condition is not true execute the else if */
+        email.innerHTML="not a valid email";
+        return false;
+    }
+    else if (!(inppassword.match(/[1234567890]/)) 
+        && inppassword.match(/[!@#$%^&*] &&/) 
+        && inppassword.match(/[a-z]/)
+        && inppassword.match(/[A-Z]/)) 
+        {
+        password.innerHTML="Password should contain at least one - digit,small letter,capital letter.";
+        return false;
+        }
 }
+
+/* Form validation completes here  */
 
