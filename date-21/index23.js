@@ -14,11 +14,11 @@ let login_function=()=>{
     let inp_confirm_pass = document.querySelector("#inp_confirm_pass").value;
 
     // paragraph text of different field to display error message
-    let ename = document.querySelector("#ename"); // error for name
-    let enumber = document.querySelector("#enumber"); // error for number
-    let eusername = document.querySelector("#eusername"); // error for username
-    let epassword = document.querySelector("#epassword"); // error for password 
-    let econfirmpass = document.querySelector("#econfirmpass"); // error for confirm password 
+    let ename = document.querySelector("#ename"); 
+    let enumber = document.querySelector("#enumber"); 
+    let eemail = document.querySelector("#eusername");
+    let epassword = document.querySelector("#epassword");  
+    let econfirmpass = document.querySelector("#econfirmpass"); 
 
 //------------------------------------------<< NAME >>--------------------------------------------------------------
     if(inp_name==="")
@@ -42,21 +42,28 @@ let login_function=()=>{
     }
 //------------------------------------------<< EMAIL >>-------------------------------------------------------------
 
-    else if(!(inp_email.includes("@")&& inp_email.includes(".com"))){ 
-        /* '!' if condition is not true execute the else if */
+    else if(!(inp_email.includes("@") && inp_email.endsWith(".com")))
+        { 
+        /* '!' <-- that condition is not true execute the else if */
                eemail.innerHTML="not a valid email";
                 return false;
-            }
-            else if (!(inp_password.match(/[1234567890]/)) 
-                && inp_password.match(/[!@#$%^&*] &&/) 
-                && inp_password.match(/[a-z]/)
-                && inp_password.match(/[A-Z]/)) 
+        }
+//-----------------------------------------<< PASSWORD >>-----------------------------------------------------------
+    else if (!((inp_password.match(/[1234567890]/)) &&
+         (inp_password.match(/[!@#$%^&*]/)) && 
+         (inp_password.match(/[a-z]/)) &&
+         (inp_password.match(/[A-Z]/)))
+            ) 
                 {
                 epassword.innerHTML="Password should contain at least one - digit,small letter,capital letter.";
                 return false;
                 } 
 //----------------------------------------<< PASSWORD AND CONFIRM PASSWORD >> --------------------------------------
- }
+      else if (inp_password!=inp_confirm_pass){
+            econfirmpass.innerHTML="Password and confirm password does not match. "
+            return false ;
+        }
+}
 
 
 /* Form validation completes here  */
