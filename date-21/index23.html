@@ -5,26 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date:23/12/24 Day:Monday</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; width: 100%;
+            border: 2px solid red;
+            box-sizing: border-box;
+            gap: 0%;
+        }
+    </style>
 </head>
 <body>
-    <form align="center">
+    <form>
 
-        <p id="errname"></p>
-        Enter Name: <input id="inpname" type="text"> <br> <br>
+        <p id="ename"></p>
+        Enter Name: 
+        <input id="inp_name" type="text"> <br> 
 
-        <p id="errnumber"></p>
-        Enter Number: <input id="inpnumber" type="text"> <br> <br>
+        <p id="enumber"></p>
+        Enter Number: 
+        <input id="inp_number" type="text"> <br> 
 
-        <p id="errusername"></p>
-        Enter Email: <input id="inpemail" type="text"> <br> <br>
+        <p id="eusername"></p>
+        Enter Email: 
+        <input id="inp_email" type="text"> <br> 
 
-        <p id="errpassword"></p>
-        Enter Password: <input id="inppassword" type="text"> <br> <br>
+        <p id="epassword"></p>
+        Enter Password: 
+        <input id="inp_password" type="text"> <br> 
 
-        <p id="errconfirmpass"></p>
-        Confirm Password: <input id="inpconfirmpass" type="text"> <br> <br>
+        <p id="econfirmpass"></p>
+        Confirm Password: 
+        <input id="inp_confirm_pass" type="text"> 
 
-        <input id="login" onclick="return action()" type="submit" value="Login">
+        <input id="login" onclick="return login_function()" type="submit" value="Login">
         <!-- Return is used to return the  return value of javascript of this input function (False value)-->
         
 

@@ -4,46 +4,60 @@
 
 
 
-let action=()=>{
+let login_function=()=>{
 
-    let inpname = document.querySelector("#inpname").value;
-    let inpnumber = document.querySelector("#inpnumber").value;
-    let inpemail = document.querySelector("#inpemail").value;
-    let inppassword = document.querySelector("#inppassword").value;
-    let inpconfirmpass = document.querySelector("#inpconfirmpass").value;
+    //input tags of different fields
+    let inp_name = document.querySelector("#inp_name").value;
+    let inp_number = document.querySelector("#inp_number").value;
+    let inp_email = document.querySelector("#inp_email").value;
+    let inp_password = document.querySelector("#inp_password").value;
+    let inp_confirm_pass = document.querySelector("#inp_confirm_pass").value;
 
-    let namee = document.querySelector("#errname");
-    let number = document.querySelector("#errnumber");
-    let username = document.querySelector("#errusername");
-    let password = document.querySelector("#errpassword");
-    let confirmpass = document.querySelector("#errconfirmpass");
+    // paragraph text of different field to display error message
+    let ename = document.querySelector("#ename"); // error for name
+    let enumber = document.querySelector("#enumber"); // error for number
+    let eusername = document.querySelector("#eusername"); // error for username
+    let epassword = document.querySelector("#epassword"); // error for password 
+    let econfirmpass = document.querySelector("#econfirmpass"); // error for confirm password 
 
-
-    if(inpname==="")
-    {
-        namee.innerHTML="Please fill this field";
-        namee.innerHTML.style.fontSize="10px";
-        namee.style.color="red";
+//------------------------------------------<< NAME >>--------------------------------------------------------------
+    if(inp_name==="")
+    {   
+        let ename_box = document.querySelector("#inp_name")
+        ename_box.placeholder="Fill out this field first";
+        ename_box.style.color="red";                         // makes input text value red ; 
+        // ename.innerHTML="Please fill this field";
         return false;
     }
-    // It checks whether the password and confirm password is same or not , if not form validation will not get filled  (else get filled). 
-    else if(inppassword!=inpconfirmpass || inpconfirmpass!=inppassword) {
-      confirmpass.innerHTML="Password not matched";
-      return false; 
-    }
-    else if(!(email.includes("@")&& email.includes(".com"))){ /* '!' if condition is not true execute the else if */
-        email.innerHTML="not a valid email";
+//--------------------------------------------<< NUMBER >>----------------------------------------------------------
+
+/*  THEORY:-  
+    isNaN checks out whether the entered input is a valid number or not (0-9) 
+    isNaN = is not a number // true , the if block will run
+    isNan = is a number // False , if block will not true 
+*/
+    else if (isNaN(inp_number)){
+        enumber.innerHTML="Fill a valid number in this field (0-9)";
         return false;
     }
-    else if (!(inppassword.match(/[1234567890]/)) 
-        && inppassword.match(/[!@#$%^&*] &&/) 
-        && inppassword.match(/[a-z]/)
-        && inppassword.match(/[A-Z]/)) 
-        {
-        password.innerHTML="Password should contain at least one - digit,small letter,capital letter.";
-        return false;
-        }
-}
+//------------------------------------------<< EMAIL >>-------------------------------------------------------------
+
+    else if(!(inp_email.includes("@")&& inp_email.includes(".com"))){ 
+        /* '!' if condition is not true execute the else if */
+               eemail.innerHTML="not a valid email";
+                return false;
+            }
+            else if (!(inp_password.match(/[1234567890]/)) 
+                && inp_password.match(/[!@#$%^&*] &&/) 
+                && inp_password.match(/[a-z]/)
+                && inp_password.match(/[A-Z]/)) 
+                {
+                epassword.innerHTML="Password should contain at least one - digit,small letter,capital letter.";
+                return false;
+                } 
+//----------------------------------------<< PASSWORD AND CONFIRM PASSWORD >> --------------------------------------
+ }
+
 
 /* Form validation completes here  */
 
