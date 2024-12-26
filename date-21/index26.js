@@ -45,6 +45,8 @@ students.forEach((e)=>{
 
 
 // Ques ?? Making  a table for an array to show it in a tabular format on DOM flow. 
+// Ques ?? What is clouser 
+
 
 // functions 
 /*
