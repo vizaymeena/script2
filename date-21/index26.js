@@ -34,4 +34,54 @@ let fill = students.filter((e)=>{
 })
 console.log(fill);
 
-//---------------------------------------<<   >>-----------------------------------------------------------
+//---------------------------------------<< For Each  >>-----------------------------------------------------------
+
+students.forEach((e)=>{
+    console.log(e.name)
+
+    //Statementns for table data
+
+})
+
+
+// Ques ?? Making  a table for an array to show it in a tabular format on DOM flow. 
+
+// functions 
+/*
+
+---->> Normal Fucntion
+
+function num(){
+
+}
+
+---->> Arrow Functions
+
+let num=()=>{
+
+}
+
+---->> Anyoymous fucniton
+
+let hii = function(){
+    console.log("Anonymous function")
+}
+hii()
+
+---->> Arrow Fucntion via call is called special type of anoymous fucntion
+
+let newarrow=()=>{
+    console.log("hi")
+}
+newarrow()
+
+--->> IIFE (Immediately invoked function expression) ececuted on real time while compiling wihtout call
+
+(                     // Mf starts here on.
+function(){
+console.log("IIFE FUNC")
+}
+)                 // Mf fucntion ends here
+();              // Call of MF function
+ 
+*/
