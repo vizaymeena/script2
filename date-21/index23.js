@@ -20,7 +20,7 @@ let login_function=()=>{
     let epassword = document.querySelector("#epassword");  
     let econfirmpass = document.querySelector("#econfirmpass"); 
 
-//------------------------------------------<< NAME >>--------------------------------------------------------------
+//-----------------------------------------<< NAME >>--------------------------------------------------------------
     if(inp_name==="")
     {   
         let ename_box = document.querySelector("#inp_name")
@@ -29,7 +29,7 @@ let login_function=()=>{
         // ename.innerHTML="Please fill this field";
         return false;
     }
-//--------------------------------------------<< NUMBER >>----------------------------------------------------------
+//-----------------------------------------<< NUMBER >>----------------------------------------------------------
 
 /*  THEORY:-  
     isNaN checks out whether the entered input is a valid number or not (0-9) 
@@ -64,7 +64,5 @@ let login_function=()=>{
             return false ;
         }
 }
-
-
 /* Form validation completes here  */
 
