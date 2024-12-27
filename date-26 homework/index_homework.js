@@ -1,3 +1,8 @@
+// Date:26/12/24 
+// Day:Thursday 
+// Time:18:33
+// -------------------- Showing Array of Objects at DOM by using (`  `) & manually creating tabular format into javascript
+
 // At the very first created an array with key pair values
 let arr = 
 [
@@ -23,18 +28,18 @@ let display=()=>{
      <tbody>           
     `                    
     //Accessing array elements through forEach      
-    arr.forEach(item =>{
-        htmltable+=
+    arr.forEach(e =>{
+        htmltable=htmltable+
         // adding these data into htmltable variable in order to adapt the arrangements specified above
         `
         <tr>
-         <td> ${item.Name} </td>
-         <td> ${item.Age} </td>
+         <td> ${e.Name} </td>
+         <td> ${e.Age} </td>
         </tr>
         `
     })
     // closing the ending part of table body & table and storing or concating it into the htmltable variable
-    htmltable+=
+    htmltable=htmltable+ /* Concating  */
          `</tbody>
          </table>
          `
