@@ -22,42 +22,54 @@
     <table id="calcu" align="center" border="2" cellspacing="12" cellpadding="15px">
         
         <tbody>
-                <!-- Row 1  -->
+
+                <!-- Display  -->
                  <tr>
-                  <td id="show"  colspan="3" ></td>
+                  <td id="display"  colspan="4" ></td>
                  </tr>
+
+
+                <!-- Row 1  -->
                 <tr>
-                  <td onclick="calc('1')"> 1 </td>
-                  <td onclick="calc('2')"> 2 </td>
-                  <td onclick="calc('3')"> 3 </td>
-                  <td> AC </td>
+                  <td onclick="calc('9')"> 9 </td>
+                  <td onclick="calc('8')"> 8 </td>
+                  <td onclick="calc('7')"> 7 </td>
+                  <td onclick="ac()"> AC </td>
                 </tr>
+
                 <!-- Row 2  -->
                 <tr>
-                  <td onclick="calc('4')"> 4 </td>
-                  <td onclick="calc('5')"> 5 </td>
                   <td onclick="calc('6')"> 6 </td>
-                  <td> del </td>
+                  <td onclick="calc('5')"> 5 </td>
+                  <td onclick="calc('4')"> 4 </td>
+                  <td onclick="del()"> del </td>
                 </tr>
+
                 <!-- Row 3  -->
                 <tr>
-                  <td onclick="('7')"> 7 </td>
-                  <td onclick="('8')"> 8 </td>
-                  <td onclick="('9')"> 9 </td>
+                  <td onclick= "calc('3')"> 3 </td>
+                  <td onclick= "calc('2')"> 2 </td>
+                  <td onclick= "calc('1')"> 1 </td>
+                  <td onclick="calc('+')"> + </td> 
                 </tr>
+
                 <!-- Row 4  -->
                 <tr>
-                  <td onclick="('.')"> . </td>
-                  <td onclick="('0')"> 0 </td>
-                  <td> = </td>                          <!-- '=',is basically a pre-made function in javascript that is defined as eval(variablenamein which 1+1 is stored as string) to calculate the string into variable -->
+                  <td onclick="calc('.')"> . </td>
+                  <td onclick="calc('0')"> 0 </td>
+                  <td onclick="result()"> = </td>                     <!-- '=',is basically a pre-made function in javascript that is defined as eval(variablenamein which 1+1 is stored as string) to calculate the string into variable -->
+                  <td onclick="calc('*')">*</td>
                 </tr>
+
                 <!-- Row 5  -->
                 <tr>
-                    <td> / </td>
-                    <td> % </td>
-                    <td> - </td>
+                    <td onclick="calc('/')"> / </td>
+                    <td onclick="calc('%')"> % </td>
+                    <td onclick="calc('-')"> - </td>
+                    <td>History</td>
                 </tr>
-        </tbody>
+            </tbody>
+                
     </table>
 
     <script src = "calculator.js"> </script>
