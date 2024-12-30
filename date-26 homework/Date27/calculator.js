@@ -33,3 +33,9 @@ let ac=()=>{
      store=""
      show.innerHTML=store;
 } 
+
+// <---- 5. History --->
+
+let history=()=>{
+     store = eval(store)
+}
