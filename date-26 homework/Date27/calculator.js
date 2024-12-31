@@ -1,5 +1,5 @@
-/* Theory: Calculator mai everything even number as dialed taken or treated as string thats y the comes into row behaviour mai else it would comes to next line if dialed numbers treated as numbers in calculators thats y tostring method is used to make the store varibale thats is converted from string to number through 
-  --->  eval(store) <--- but later also converted into string by using --> tostring() <-- method 
+/* Theory: Calculator mai everything even number dialed taken as or treated as string thats y it comes into row behaviour mai else it would comes to next line if dialed numbers treated as numbers in calculators mai thats y toString method is used to make the store varibale thats is converted from string to number through 
+  --->  eval(store) <--- but later also converted into string by using --> tostring() <-- method in order to avoid the ek ke niche ek number ane wali problem ko
 */
 
 // < ----- 1. Display ------->
@@ -37,5 +37,5 @@ let ac=()=>{
 // <---- 5. History --->
 
 let history=()=>{
-     store = eval(store)
+     
 }
