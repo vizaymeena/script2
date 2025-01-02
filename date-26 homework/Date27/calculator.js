@@ -7,8 +7,8 @@
 let store = ""; // Initialize store as an empty string
 
 let calc = (value) => {
-    let show = document.querySelector("#display"); // Select the display element
-    store += value                // calc('1/2/3/4/5/6/7/8/9') coming as strings and concating with store variable 
+    let display = document.querySelector("#display"); // Select the display element
+    store += value                                // calc('1/2/3/4/5/6/7/8/9') coming as strings and concating with store variable 
     show.innerHTML = store  
 };
 
@@ -16,8 +16,9 @@ let calc = (value) => {
 let result=()=>{
      let show = document.querySelector("#display");
      show.innerHTML=eval(store); // "1+2" 
+    
      store = eval(store) // 3 number 
-     store.toString()  // "" converted into string
+     store.toString()  // "8+1" converted into string
 }
 
 // < ---- 3. Del ----->
@@ -39,3 +40,27 @@ let ac=()=>{
 let history=()=>{
      
 }
+
+// calcu styling 
+let calcubody=document.querySelector(".calcubody")
+calcubody.style.backgroundColor="black"
+
+let class1 = document.querySelector(".class1")
+class1.style.backgroundColor="gray";
+class1.style.color='white'
+
+let row1 = document.querySelector(".row1")
+row1.style.color="white"
+
+let row2 = document.querySelector(".row2")
+row2.style.color="white"
+
+let row3 = document.querySelector(".row3")
+row3.style.color="white"
+
+let row4 = document.querySelector(".row4")
+row4.style.color="white"
+
+let row5 = document.querySelector(".row5")
+row5.style.color="white"
+

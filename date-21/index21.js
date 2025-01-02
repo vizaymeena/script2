@@ -1,7 +1,9 @@
-// let btn = document.querySelector("#button1")
-// btn.addEventListener("click",()=>{
-//     alert("button clicked") // dbclick , perform action on double click
-// })
+/*
+let btn = document.querySelector("#button1")
+btn.addEventListener("click",()=>{
+    alert("button heman") // dbclick , perform action on double click
+})
+    */
 
 
 //---->> CLick Actions
