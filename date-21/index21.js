@@ -45,10 +45,10 @@ inp.addEventListener("keydown",(e)=>{  // e is a parameter given to perform e.ke
 
 
 // --- >> showing input text content (real-time) on web page 
-/*
+
 let input = document.querySelector("#input")
 input.addEventListener("input",()=>{
     let text = document.querySelector("#outputtext")
     text.innerHTML = input.value
 })
-*/
+

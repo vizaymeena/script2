@@ -1,4 +1,8 @@
-// DOM
+// DOM 
+// what is dom 
+// Differences between Dom and Bom
+// what is windows objects
+// Differences in Java and JAvascript 
 
 // Rotate Div and make it circle
 let rotcircle=()=>{

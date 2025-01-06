@@ -9,6 +9,6 @@ button.addEventListener("click", ()=>{
             button.innerHTML = "Hide";
         } else {
             div.style.display = "none";
-            button.innerHTML = "Show";
+            button.innerHTML = "block";
         }
 })

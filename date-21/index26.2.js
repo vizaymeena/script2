@@ -1,11 +1,11 @@
 let myarr = [];
 
 // Get references to elements
-const keyInput = document.querySelector("#keyinput");
-const valueInput = document.querySelector("#valueinput");
-const addobj = document.querySelector("#addobjects");
-const showarr = document.querySelector("#showarray");
-const error = document.querySelector("#error");
+let keyInput = document.querySelector("#keyinput");
+let valueInput = document.querySelector("#valueinput");
+let addobj = document.querySelector("#addobjects");
+let showarr = document.querySelector("#showarray");
+let error = document.querySelector("#error");
 
 // Add Object to Array
 addobj.addEventListener("click", () => {
@@ -34,5 +34,5 @@ addobj.addEventListener("click", () => {
 // Show Array
 showarr.addEventListener("click", () => {
     const output = document.querySelector("#output");
-    output.innerHTML = JSON.stringify(myarr, null, 4); // Pretty-print the array
+    // Pretty-print the array
 });

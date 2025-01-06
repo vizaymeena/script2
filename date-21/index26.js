@@ -1,7 +1,7 @@
 // Array of objects :- Putting objects inside an array rather than other values(Numbers,characters and so on..)
 
 
-//-------------------------------------<< Array of object >>----------------------------------------------------
+//---------------------------------<< Array of object in Array >>--------------------------------------------------
 let students = [
     //Note:- Comma , After keyvalue pairs and when object ends. 
     {name:"sid",
@@ -64,13 +64,14 @@ let num=()=>{
 }
 
 ---->> Anyoymous fucniton
+Theory: That does'nt 've a name associated with it and requires a call at the end
 
 let hii = function(){
     console.log("Anonymous function")
 }
 hii()
 
----->> Arrow Fucntion via call is called special type of anoymous fucntion
+---->> Arrow Function via call is called special type of anoymous fucntion
 
 let newarrow=()=>{
     console.log("hi")
@@ -78,9 +79,11 @@ let newarrow=()=>{
 newarrow()
 
 --->> IIFE (Immediately invoked function expression) ececuted on real time while compiling wihtout call
+Theory: Executes as soon as defined / also known as self executing function  
 
 (                     // Mf starts here on.
-function(){
+function()
+{
 console.log("IIFE FUNC")
 }
 )                 // Mf fucntion ends here

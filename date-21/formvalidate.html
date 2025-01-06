@@ -19,8 +19,8 @@
     </style>
 </head>
 <body>
+    <!-- Form formalities of showing error into p tag( Creation of ptag ) and taking particular data such as name,number,password falana falana -->
     <form>
-
         <p id="ename"></p>
         Enter Name: 
         <input id="inp_name" type="text"> <br> 
@@ -40,7 +40,13 @@
         <p id="econfirmpass"></p>
         Confirm Password: 
         <input id="inp_confirm_pass" type="text">  <br>
+        
 
+        <!-- IMPORTANT PART -->
+        <!--
+         NOTE: Whenever user fills out wrong data or data which is not properly adhered in the input fields
+         then some kind of error releted to that particular wrong data will be shown on the DOM and that is all done through the keyword return which make the form to get rejected while something is not upto the mark as per the developers code
+        -->
         <input id="login" onclick="return login_function()" type="submit" value="Login">
         <!-- Return is used to return the  return value of javascript of this input function (False value)-->
         

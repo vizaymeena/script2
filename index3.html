@@ -1,9 +1,12 @@
+<!-- Increments and Decrements of anything ( Anything that holds the natures of itself being increment or decremented ) it could be a number,fontSize or some such similar creepy things -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font-size</title>
+    <!-- container div ( Not necessary to decorate it ) -->
     <style>
      #containerdiv{
         display: flex;
@@ -16,14 +19,16 @@
         border: 2px solid black;
     }   
     </style>
-    <script src="index3.js"> </script>
+ 
 </head>
 <body>
     <div id="containerdiv">
-        <p id="yash"> Yash </p>
+        <p id="ptag"> Yash </p>
+        <!-- Followings are the buttons which binds the functions to get executed everytime on click -->
         <button onclick="inc()"> + </button>
         <button onclick="dec()"> - </button>
     </div>
-    
+    <!-- Script file should always fetch at the above of ending tag of html body to avoid unnecessary programfailuers -->
+    <script src="index3.js"> </script>
 </body>
 </html>

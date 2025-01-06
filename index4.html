@@ -1,5 +1,6 @@
 <!-- Ques ? Take input , click on button and show it on P tag .  --> 
 
+<!-- Showing Anything that is typed/written into <input> tag to anywhere as per userr choice by marking that particular html element you desire to show it. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +11,14 @@
 </head>
 <body>
     <div>
-        <input id="inputtext" type="text" placeholder="type here">
+         <!-- Input tag mai jo bhi user dalega usko p tag mai dhikana hai  -->
+        <input id="inputtake" type="text" placeholder="type here">
+        <p id="outputshow"></p>
+
+        <!-- button pe function created jo ki chalges whenever user click karega  -->
         <button id="button" onclick="show()">SHOW</button>
-        <p id="outputtext"></p>
+        
+        
     </div>
     
 </body>
