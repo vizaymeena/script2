@@ -75,3 +75,6 @@ let login_function=()=>{
 /* NOTE: Do Not forget everything ( varibales and if else statements are used in inside the function to to access these variabeles and the user input values whenever the login button gets clicked)
 WHAT, if they were outside the function (The varibale names)?? --> Then, the program will runs them only one times and the second time it wont access the value of input which lead to making the form gets submiitted even with the wrong info.
 */
+
+
+/*  */
